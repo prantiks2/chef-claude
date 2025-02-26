@@ -1,8 +1,9 @@
 header nav {
   display: flex;
   justify-content: center;
-  box-shadow: 0px 1px 2px 0px #0000000F;
-  box-shadow: 0px 1px 3px 0px #0000001A;
+  column-gap: 12px;
+  box-shadow: 0px 1px 3px 0px #0000001A, 0px 1px 2px 0px #0000000F;
+  background-color: #FFFFFF;
 }
 
 header nav .title {
@@ -10,6 +11,46 @@ header nav .title {
   font-size: 32px;
   line-height: 60px;
   letter-spacing: 0.05em;
-  margin-left: 12px;
+}
+
+main {
+  padding: 30px 30px 10px 
+}
+
+main .add-ingredient-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-ingredient-form input {
+  min-width: 150px;
+  max-width: 400px;
+  flex-grow: 1;
+  height: 34px;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  padding-left: 8px;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+.add-ingredient-form button {
+  background-color: #141413;
+  color: #FAFAF8;
+  height: 38px;
+  min-width: 136px;
+  max-width: 184px;
+  flex-grow: 1;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+.add-ingredient-form button::before {
+  content: "+";
+  margin-right: 4px;
 }
 
